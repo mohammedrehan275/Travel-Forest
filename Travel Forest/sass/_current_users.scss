@@ -1,0 +1,21 @@
+$white: rgba(255,255,255,.3);
+
+#current-users{
+    width: 60%;
+    color: white;
+    border-top:1px solid $white ;
+    border-bottom:1px solid $white;
+    margin: 192px auto;
+    padding: 22px 0;
+    
+    h4, h3{
+        text-align: center;
+    }
+    h4{
+        font-size: 36px;
+    }
+    h3{
+        font-size: 72px;
+        margin-top: 12px;
+    }
+}
