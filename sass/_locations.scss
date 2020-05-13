@@ -1,0 +1,59 @@
+#locations{
+    margin: 120px 0;
+    text-align: center;
+    color: white;
+
+    h2{
+        text-transform: uppercase;
+        font-size: 36px;
+    }
+
+    #header-link{
+        font-size: 28px;
+        display: block;
+        color: #8a8a8a;
+        text-decoration: underline;
+        margin: 8px 0 22px;
+
+        &:hover{
+            opacity: .7;
+        }
+    }
+
+    input{
+        background-color: transparent;
+        width: 300px;
+        padding: 0 18px 10px;
+        display: block;
+        text-align: center;
+        margin: 72px auto;
+        border-bottom: 1px solid $white;
+
+    }
+    ::placeholder{ color: #d3d3d3; }
+
+    h4{
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        margin: 18px auto;
+
+        li{
+            color: rgba(255,255,255,.7);
+            font-size: 18px;
+            padding: 18px 58px;
+            list-style: none;
+
+            a{cursor: pointer;}
+        }
+    }
+
+}
