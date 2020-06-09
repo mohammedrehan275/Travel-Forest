@@ -128,3 +128,15 @@
         }
     }
 }
+
+@media (max-width: 992px) {
+    #testemonials {
+        article{
+            #reviews{ 
+                flex-direction: column; 
+                .review{ margin-top: 10px; }
+            }
+        }
+    }
+    // &::before, &::after{ visibility: hidden; }
+}
