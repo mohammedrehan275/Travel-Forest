@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet/main.css">
+    <script src="https://kit.fontawesome.com/ba63d25c21.js" crossorigin="anonymous"></script>
     <title>Travel Forest</title>
 </head>
 <body>
     <div id="bg"></div>
     <section id="landing">
         <h1>Travel Forest</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos ipsam fugiat deleniti dolorum ipsum delectus reiciendis aut non voluptate est veniam optio, sapiente dolores? Asperiores, ratione. Earum, ex repellendus!</p>
+        <p>Lorem ipsum dolor sicing elit. Autem eos ielectus reiciendis aut non voluptate est veniam optio, sapiente dolores? Asperiores, ratione. Earum, ex repellendus!</p>
         <button type="button" name="button" onclick="entersite();">Enter</button>
     </section>
 
@@ -22,10 +23,11 @@
         <aside id="register-side-bar">
             <div id="empty-section"></div>
             <section id="visible-section">
-                <span id="call-num"><i id="fas fa-phone"></i>1800-200-9001</span>
+                <span id="call-num"><i class="fas fa-phone"></i>1800-200-9001</span>
                 <h4 id="register">register</h4>
             </section>
             <section id="form-section">
+                <i class="far fa-arrow-alt-circle-left fa-2x " id="back" onclick="closeRegister();"></i>
                 <h2>Register your account</h2>
                 <form action="index.html" method="POST" autocomplete="off">
                     <input type="email" name="email" placeholder="enter email" required>
@@ -38,46 +40,53 @@
         </aside>
 
         <section id="above-fold">
-            <nav>
-                 <ul>
-                    <li><a href="#">Travel Forest</a></li>
-                    <li><a href="#">Get started</a></li>
-                    <li><a href="#">Deal of the week</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Become a sponsor</a></li>
+            <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <a href="#" class="logo">Travel Forest</a>
+                <ul class="main-nav" id="js-menu">
+                    <li><a href="#" class="nav-links">Travel Forest</a></li>
+                    <li><a href="#" class="nav-links">Get started</a></li>
+                    <li><a href="#" class="nav-links">Deal of the week</a></li>
+                    <li><a href="#" class="nav-links">Testimonials</a></li>
+                    <li><a href="#" class="nav-links">Become a sponsor</a></li>
                 </ul>
             </nav>
 
             <article>
                 <h1>Book your next vacation with us!</h1>
                 <p>City trip diary worldwide hiking expedia sight seeing discount stay miles Rome things to do hitchhiking USA. Caravan discover hotel hospitality itinerary. National New York City people tourist attractions private jet Europe</p>
-                <button type="button" name="button">Get started</button>
+                <button type="button" name="button" id="reg">Get started</button>
             </article>
         </section>
 
         <section id="info-section">
-            <article>
-                <figure></figure>
-                <div>
-                    <h2>Travel worldwide</h2>
-                    <p>Berlin flexibility travel currency package housing frequent flyer adventure exchange rate gateway 
+            <article class="card" id="card">
+                <figure id="fig"></figure>
+                <div class="content">
+                    <h2 class="title">Travel worldwide</h2>
+                    <p class="copy">Berlin flexibility travel currency package housing frequent flyer adventure exchange rate gateway 
                         itinerary USA sailing airplane. Vienna budget guest New York City dollar Berlin Pacific.</p>
+                    <button class="btn">Read More</button>
                 </div>
             </article>
-            <article>
-                <figure></figure>
-                <div>
-                    <h2>Huge Savings</h2>
-                    <p>Stress free animals tour operator maps hiking money Russia bunkbeds passport. 
+            <article class="card">
+                <figure id="fig"></figure>
+                <div class="content">
+                    <h2 class="title">Huge Savings</h2>
+                    <p class="copy">Stress free animals tour operator maps hiking money Russia bunkbeds passport. 
                         Cuba couchsurfing maps camper ticket itinerary.</p>
+                    <button class="btn">Read More</button>
                 </div>
             </article>
-            <article>
-                <figure></figure>
-                <div>
-                    <h2>Discover New Cultures</h2>
-                    <p>Explore national train Holland last minute Germany rural stay people worldwide.
-                         Airplane ticket South-America Rome translation hospitality. Cuba South-America discount apartment Budapest.</p>
+            <article class="card">
+                <figure id="fig"></figure>
+                <div class="content">
+                    <h2 class="title">Discover New Cultures</h2>
+                    <p class="copy">Explore national train Holland last minute Germany rural stay people worldwide.
+                        Airplane ticket South-America Rome translation hospitality. Cuba South-America discount apartment Budapest.</p>
+                    <button class="btn">Read More</button>
                 </div>
             </article>
         </section>                            
@@ -187,8 +196,7 @@
     </section>
 
 
-
-
+    
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
